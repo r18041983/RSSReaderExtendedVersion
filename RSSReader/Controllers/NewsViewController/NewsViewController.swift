@@ -86,6 +86,8 @@ class NewsViewController: UIViewController {
     
     @IBAction func pressParseButton(_ sender: UIButton)
     {
+        self.postsArray.removeAll()
+        
         for itemToParse in self.URLArray {
             let parserRSSLenta = RSSParser(urlString: itemToParse)
             parserRSSLenta.delegate = self

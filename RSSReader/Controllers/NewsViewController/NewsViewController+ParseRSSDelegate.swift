@@ -27,7 +27,6 @@ extension NewsViewController: RSSParserDelegate
     
     func endParsing(parser: RSSParser)
     {
-        //self.sortByData(operation: self.sortOperation)
         DispatchQueue.main.async
         {
             WaitIndicator.shared.hide()
