@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SettingsTableCell" customModule="RSSReader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-MX-XZN">
+                        <rect key="frame" x="16" y="14" width="273" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Liq-pc-tcO">
+                        <rect key="frame" x="293" y="14" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Liq-pc-tcO" secondAttribute="height" multiplier="1:1" id="4RQ-km-9Oo"/>
+                        </constraints>
+                        <state key="normal" image="minus.circle" catalog="system"/>
+                        <connections>
+                            <action selector="pressDisableItemButtonWithButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uBv-9W-A4C"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bQ2-MX-XZN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="47E-2Y-rXK"/>
+                    <constraint firstItem="Liq-pc-tcO" firstAttribute="bottom" secondItem="bQ2-MX-XZN" secondAttribute="bottom" id="8Q8-IY-oXp"/>
+                    <constraint firstItem="bQ2-MX-XZN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="e96-Mu-Ur5"/>
+                    <constraint firstItem="Liq-pc-tcO" firstAttribute="leading" secondItem="bQ2-MX-XZN" secondAttribute="trailing" constant="4" id="hYO-vg-ibt"/>
+                    <constraint firstAttribute="trailing" secondItem="Liq-pc-tcO" secondAttribute="trailing" constant="12" id="l73-4m-cRg"/>
+                    <constraint firstItem="Liq-pc-tcO" firstAttribute="top" secondItem="bQ2-MX-XZN" secondAttribute="top" id="ooG-wI-2nl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemText" destination="bQ2-MX-XZN" id="qA2-s6-T7c"/>
+            </connections>
+            <point key="canvasLocation" x="13.768115942028986" y="62.946428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
