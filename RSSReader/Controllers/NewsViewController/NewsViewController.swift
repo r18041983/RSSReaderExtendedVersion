@@ -35,7 +35,6 @@ class NewsViewController: UIViewController {
         else
         {
             URLArray.append("https://lenta.ru/rss")
-            URLArray.append("http://rss.dw.de/xml/rss-ru-all")
         }
         
         self.newsTableView.delegate = self
