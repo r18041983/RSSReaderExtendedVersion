@@ -10,10 +10,10 @@ import UIKit
 class NewsTableCell: UITableViewCell
 {
 
-    @IBOutlet var dataLabel: UILabel!
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var textPostLabel: UILabel!
-    @IBOutlet var istochnikLabel: UILabel!
+    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var textPostLabel: UILabel!
+    @IBOutlet weak var istochnikLabel: UILabel!
     
     var savedLink: String?
     var savedData: String?

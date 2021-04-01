@@ -9,7 +9,7 @@ import UIKit
 
 class SettingsTableCell: UITableViewCell {
 
-    @IBOutlet var itemText: UILabel!
+    @IBOutlet weak var itemText: UILabel!
     
     var delegate: SettingsTableCellProtocol?
     var savedIndexPath: IndexPath?
